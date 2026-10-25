@@ -106,10 +106,46 @@
     }
 
     .section-box {
-      padding: 1rem 0.9rem 0.9rem;
-      border: 1px solid rgba(200, 168, 130, 0.4);
+      position: relative;
+      padding: 1rem 0.9rem 1.25rem;
+      border: 1px solid rgba(190, 160, 224, 0.5);
       border-radius: 20px;
-      background: rgba(200, 168, 130, 0.08);
+      background: linear-gradient(180deg, rgba(220, 196, 236, 0.4), rgba(240, 230, 248, 0.3));
+    }
+
+    .section-box .section-title {
+      color: #7d6396;
+    }
+
+    .sparkle {
+      --star-pale: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-1 -1 26 26'%3E%3Cpath d='M12 0Q14 10 24 12Q14 14 12 24Q10 14 0 12Q10 10 12 0Z' fill='%23fff7cc' stroke='%23f6dc7a' stroke-width='1' stroke-linejoin='round'/%3E%3C/svg%3E");
+      --star-gold: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-1 -1 26 26'%3E%3Cpath d='M12 0Q14 10 24 12Q14 14 12 24Q10 14 0 12Q10 10 12 0Z' fill='%23ffe888' stroke='%23fff7cc' stroke-width='1' stroke-linejoin='round'/%3E%3C/svg%3E");
+      position: absolute;
+      width: var(--size);
+      height: var(--size);
+      background: var(--star-pale) center / contain no-repeat;
+      filter: drop-shadow(0 0 2px rgba(255, 214, 90, 0.85));
+      pointer-events: none;
+      animation: twinkle 3s ease-in-out infinite;
+    }
+
+    .sparkle.s1 { --size: 16px; top: 10px; left: 16px; animation-delay: 0s; }
+    .sparkle.s2 { --size: 10px; top: 24px; left: 3px; background-image: var(--star-gold); animation-delay: 1.2s; }
+    .sparkle.s3 { --size: 12px; top: 12px; left: 30%; background-image: var(--star-gold); animation-delay: 0.6s; }
+    .sparkle.s4 { --size: 12px; top: 14px; right: 30%; animation-delay: 1.8s; }
+    .sparkle.s5 { --size: 20px; top: 8px; right: 18px; animation-delay: 0.9s; }
+    .sparkle.s6 { --size: 10px; top: 42px; right: 3px; background-image: var(--star-gold); animation-delay: 2.1s; }
+    .sparkle.s7 { --size: 10px; bottom: 30px; left: 3px; animation-delay: 1.5s; }
+    .sparkle.s8 { --size: 12px; bottom: 5px; left: 18px; background-image: var(--star-gold); animation-delay: 0.3s; }
+    .sparkle.s9 { --size: 16px; bottom: 4px; right: 22px; animation-delay: 2.4s; }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.55; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.1); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sparkle { animation: none; }
     }
 
     .links {
@@ -287,6 +323,15 @@
     <!-- <div class="divider"></div> -->
 
     <section class="section section-box">
+      <span class="sparkle s1" aria-hidden="true"></span>
+      <span class="sparkle s2" aria-hidden="true"></span>
+      <span class="sparkle s3" aria-hidden="true"></span>
+      <span class="sparkle s4" aria-hidden="true"></span>
+      <span class="sparkle s5" aria-hidden="true"></span>
+      <span class="sparkle s6" aria-hidden="true"></span>
+      <span class="sparkle s7" aria-hidden="true"></span>
+      <span class="sparkle s8" aria-hidden="true"></span>
+      <span class="sparkle s9" aria-hidden="true"></span>
       <h2 class="section-title">Featured</h2>
       <div class="links">
         <a class="link-btn btn-christmas" href="https://cozy-crochet-by-jd.myshopify.com/collections/handmade-christmas-gifts" target="_blank">
