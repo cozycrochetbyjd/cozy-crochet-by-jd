@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- box body -->
+  <rect x="76" y="232" width="360" height="224" rx="16" fill="#D8372E"/>
+  <!-- shade under the lid -->
+  <rect x="76" y="248" width="360" height="26" fill="#B42A23"/>
+  <!-- lid -->
+  <rect x="48" y="168" width="416" height="86" rx="18" fill="#E8503F"/>
+  <!-- ribbon -->
+  <rect x="224" y="168" width="64" height="288" fill="#FFC83D"/>
+  <rect x="224" y="248" width="64" height="26" fill="#E5A91A"/>
+  <!-- bow loops -->
+  <path d="M256 168 C214 70 112 66 126 134 C136 180 212 184 256 168 Z" fill="#FFC83D"/>
+  <path d="M256 168 C298 70 400 66 386 134 C376 180 300 184 256 168 Z" fill="#FFC83D"/>
+  <path d="M236 160 C208 112 160 102 156 130 C154 150 196 160 236 160 Z" fill="#E5A91A"/>
+  <path d="M276 160 C304 112 352 102 356 130 C358 150 316 160 276 160 Z" fill="#E5A91A"/>
+  <!-- knot -->
+  <rect x="226" y="138" width="60" height="50" rx="20" fill="#FFD866"/>
+</svg>
