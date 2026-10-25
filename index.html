@@ -92,11 +92,30 @@
       margin: 0 auto 1.4rem;
     }
 
+    .section {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 0.72rem;
+      font-weight: 400;
+      color: #6e6e6e;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-box {
+      padding: 1rem 0.9rem 0.9rem;
+      border: 1px solid rgba(200, 168, 130, 0.4);
+      border-radius: 20px;
+      background: rgba(200, 168, 130, 0.08);
+    }
+
     .links {
       display: flex;
       flex-direction: column;
       gap: 0.65rem;
-      margin-bottom: 1.5rem;
     }
 
     .link-btn {
@@ -182,6 +201,18 @@
       border-radius: 8px;
     }
 
+    .btn-gloves {
+      background: rgba(63, 167, 163, 0.09);
+      border-color: rgba(63, 167, 163, 0.25);
+      color: #1f5f5c;
+    }
+
+    .btn-gloves .icon img {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+    }
+
     .btn-instagram {
       background: rgba(180, 100, 160, 0.07);
       border-color: rgba(180, 100, 160, 0.2);
@@ -237,6 +268,12 @@
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
     }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 1.5rem 0.5rem;
+      }
+    }
   </style>
 </head>
 
@@ -249,64 +286,81 @@
     <p class="location">London, UK</p>
     <!-- <div class="divider"></div> -->
 
-    <div class="links">
-      <a class="link-btn btn-shopify" href="https://cozy-crochet-by-jd.myshopify.com/" target="_blank">
-        <div class="icon"><img src="assets/shopify.png" alt="Shopify icon"></div>
-        <div class="label">
-          Shopify Store
-          <span class="sub">cozy-crochet-by-jd.myshopify.com</span>
-        </div>
-        <span class="arrow">→</span>
-      </a>
-      <a class="link-btn btn-christmas" href="https://cozy-crochet-by-jd.myshopify.com/collections/handmade-christmas-gifts" target="_blank">
-        <div class="icon"><img src="assets/gift.svg" alt="Gift icon"></div>
-        <div class="label">
-          Handmade Christmas Gifts
-          <span class="sub">Shop the collection</span>
-        </div>
-        <span class="arrow">→</span>
-      </a>
-      <a class="link-btn btn-diya" href="https://cozy-crochet-by-jd.myshopify.com/products/crochet-lotus-tea-light-holders-set-of-2" target="_blank">
-        <div class="icon"><img src="assets/diya.svg" alt="Diya icon"></div>
-        <div class="label">
-          Tea Light Holder Set of 2
-          <span class="sub">Crochet lotus tea light holders</span>
-        </div>
-        <span class="arrow">→</span>
-      </a>
-      <a class="link-btn btn-instagram" href="https://www.instagram.com/cozycrochetbyjd" target="_blank">
-        <div class="icon"><img src="assets/instagram.png" alt="Instagram icon"></div>
-        <div class="label">
-          Instagram
-          <span class="sub">@cozycrochetbyjd</span>
-        </div>
-        <span class="arrow">→</span>
-      </a>
-      <a class="link-btn btn-tiktok" href="https://www.tiktok.com/@cozycrochetbyjd" target="_blank">
-        <div class="icon"><img src="assets/tiktok.png" alt="TikTok icon"></div>
-        <div class="label">
-          TikTok
-          <span class="sub">@cozycrochetbyjd</span>
-        </div>
-        <span class="arrow">→</span>
-      </a>
-      <a class="link-btn btn-pinterest" href="https://in.pinterest.com/cozycrochetbyjd/" target="_blank">
-        <div class="icon"><img src="assets/pinterest.png" alt="Pinterest icon"></div>
-        <div class="label">
-          Pinterest
-          <span class="sub">cozycrochetbyjd</span>
-        </div>
-        <span class="arrow">→</span>
-      </a>
-      <a class="link-btn btn-facebook" href="https://www.facebook.com/profile.php?id=61590358989383" target="_blank">
-        <div class="icon"><img src="assets/facebook.png" alt="Facebook icon"></div>
-        <div class="label">
-          Facebook
-          <span class="sub">Cozy Crochet by JD</span>
-        </div>
-        <span class="arrow">→</span>
-      </a>
-    </div>
+    <section class="section section-box">
+      <h2 class="section-title">Featured</h2>
+      <div class="links">
+        <a class="link-btn btn-christmas" href="https://cozy-crochet-by-jd.myshopify.com/collections/handmade-christmas-gifts" target="_blank">
+          <div class="icon"><img src="assets/gift.svg" alt="Gift icon"></div>
+          <div class="label">
+            Handmade Christmas Gifts
+            <span class="sub">Shop the collection</span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-btn btn-diya" href="https://cozy-crochet-by-jd.myshopify.com/products/crochet-lotus-tea-light-holders-set-of-2" target="_blank">
+          <div class="icon"><img src="assets/diya.svg" alt="Diya icon"></div>
+          <div class="label">
+            Tea Light Holder Set of 2
+            <span class="sub">Crochet lotus tea light holders</span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-btn btn-gloves" href="https://cozy-crochet-by-jd.myshopify.com/products/granny-square-fingerless-gloves-teal-mustard" target="_blank">
+          <div class="icon"><img src="assets/glove.svg" alt="Fingerless glove icon"></div>
+          <div class="label">
+            Fingerless Gloves
+            <span class="sub">Granny square, teal &amp; mustard</span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Socials</h2>
+      <div class="links">
+        <a class="link-btn btn-shopify" href="https://cozy-crochet-by-jd.myshopify.com/" target="_blank">
+          <div class="icon"><img src="assets/shopify.png" alt="Shopify icon"></div>
+          <div class="label">
+            Shopify Store
+            <span class="sub">cozy-crochet-by-jd.myshopify.com</span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-btn btn-instagram" href="https://www.instagram.com/cozycrochetbyjd" target="_blank">
+          <div class="icon"><img src="assets/instagram.png" alt="Instagram icon"></div>
+          <div class="label">
+            Instagram
+            <span class="sub">@cozycrochetbyjd</span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-btn btn-tiktok" href="https://www.tiktok.com/@cozycrochetbyjd" target="_blank">
+          <div class="icon"><img src="assets/tiktok.png" alt="TikTok icon"></div>
+          <div class="label">
+            TikTok
+            <span class="sub">@cozycrochetbyjd</span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-btn btn-pinterest" href="https://in.pinterest.com/cozycrochetbyjd/" target="_blank">
+          <div class="icon"><img src="assets/pinterest.png" alt="Pinterest icon"></div>
+          <div class="label">
+            Pinterest
+            <span class="sub">cozycrochetbyjd</span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-btn btn-facebook" href="https://www.facebook.com/profile.php?id=61590358989383" target="_blank">
+          <div class="icon"><img src="assets/facebook.png" alt="Facebook icon"></div>
+          <div class="label">
+            Facebook
+            <span class="sub">Cozy Crochet by JD</span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
 
     <p class="footer">Thoughtful gifts and cozy little keepsakes with a soft handmade touch</p>
   </div>
